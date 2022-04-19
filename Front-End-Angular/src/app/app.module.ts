@@ -4,27 +4,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Pagina404ComponentComponent } from './pagina404-component/pagina404-component.component';
-import { HeaderComponentComponent } from './header-component/header-component.component';
-import { PageOneComponentComponent } from './page-one-component/page-one-component.component';
-import { CardItemComponentComponent } from './card-item-component/card-item-component.component';
-import { LoginComponent } from './login/login.component';
-import { ProfileComponent } from './profile/profile.component';
-
+import { MenuPrincipalModule } from './menu-principal/menu-principal.module';
+import { PageLoginModule} from './page-login/page-login.module';
 
 @NgModule({
 
   declarations: [
-    AppComponent,
-    LoginComponent,
-    
+    AppComponent
+
   ],
   imports: [
     NgbModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MenuPrincipalModule,
+    PageLoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
